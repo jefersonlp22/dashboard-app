@@ -1,0 +1,58 @@
+@import "../../sass/colors";
+.cardIndicator {
+  background: $white;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  border: 1px solid $gallery;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.05);
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+  &--icon {
+    margin-bottom: 10px;
+  }
+  &--number {
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $tundora;
+    margin-bottom: 10px;
+  }
+  &--title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: $bombay;
+  }
+  &--information {
+    color: $soft-green;
+    min-height: 18px;
+  }
+  &--loader__wrapper{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;    
+  }
+  &--loader{
+    margin: -6px auto auto auto;;
+  }
+  &--loader,
+  &--loader:before,
+  &--loader:after{
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;    
+  }
+}

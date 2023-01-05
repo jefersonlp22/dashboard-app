@@ -1,0 +1,22 @@
+.status__container {
+  display: flex;
+  align-items: center;
+}
+.status {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+}
+
+.status--active {
+  background-color: #6dc783;
+}
+
+.status--trial {
+  background-color: #d9d9d9;
+}
+
+.status--pending {
+  background-color: #ff6f6f;
+}

@@ -1,0 +1,10 @@
+.penButton {
+  background: none;
+  border: none;
+  outline: 0;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}

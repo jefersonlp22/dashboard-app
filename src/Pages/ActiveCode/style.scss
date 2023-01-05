@@ -1,0 +1,21 @@
+@import "../../sass/colors";
+@import "../../sass/buttons";
+
+.active__code {
+  &--logoApp {
+    margin-bottom: 70px;
+  }
+
+  &--validMessage {
+    width: 250px;
+    font-family: FontMedium;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b2b2b3;
+  }
+}

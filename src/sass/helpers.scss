@@ -1,0 +1,167 @@
+.height100 {
+  height: 100%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.padding0 {
+  padding: 0px !important;
+  .paddingLeft {
+    padding: 0;
+  }
+}
+
+.padding10 {
+  &.paddingLeft {
+    padding-left: 10px !important;
+  }
+  &.paddinBottom {
+    padding-bottom: 10px !important;
+  }
+
+  &.paddingRight {
+    padding-right: 10px !important;
+  }
+
+  &.paddingAll {
+    padding: 10px !important;
+  }
+}
+.padding15 {
+  &.paddingLeft {
+    padding-left: 15px !important;
+  }
+
+  &.paddingRight {
+    padding-right: 15px !important;
+  }
+
+  &.paddingAll {
+    padding: 15px !important;
+  }
+}
+
+.padding20 {
+  &.paddingLeft {
+    padding-left: 20px !important;
+  }
+
+  &.paddingRight {
+    padding-right: 20px !important;
+  }
+
+  &.paddingAll {
+    padding: 20px !important;
+  }
+}
+
+.padding40 {
+  &.paddingLeft {
+    padding-left: 40px !important;
+  }
+
+  &.paddingRight {
+    padding-right: 40px !important;
+  }
+
+  &.paddingAll {
+    padding: 40px !important;
+  }
+}
+
+.df {
+  display: flex !important;
+}
+
+.fdr {
+  flex-direction: row !important;
+}
+
+.fdc {
+  flex-direction: column !important;
+}
+
+.alic {
+  align-items: center;
+}
+
+.alis {
+  align-items: flex-start;
+}
+
+.ali-fe {
+  align-items: flex-end;
+}
+
+.alsc {
+  align-self: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-e {
+  justify-content: space-evenly;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.mTop20 {
+  margin-top: 20px;
+}
+.mTop10 {
+  margin-top: 10px;
+}
+
+.mTop30 {
+  margin-top: 30px;
+}
+.mBottom10 {
+  margin-bottom: 10px;
+}
+
+.mBottom20 {
+  margin-bottom: 20px;
+}
+.mBottom25 {
+  margin-bottom: 25px;
+}
+
+.mBottom30 {
+  margin-bottom: 30px;
+}
+
+.mRight30 {
+  margin-right: 30px;
+}
+
+.spacedInput{
+  div + div{
+    padding-left: 30px;
+  }
+}

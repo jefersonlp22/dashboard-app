@@ -1,0 +1,62 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  .col {
+    flex-grow: inherit !important;
+  }
+}
+
+.line {
+  height: 20px;
+  width: 100%;
+  &.half{
+    height: 16px;
+  }
+
+  &.x1{
+    height: 8px;
+  }
+
+  &.x2{
+    height: 16px;
+  }
+
+  &.x3{
+    height: 32px;
+  }
+
+  &.x4{
+    height: 64px;
+  }
+}
+
+.pl50 {
+  padding-left: 50px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}

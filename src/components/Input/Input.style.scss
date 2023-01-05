@@ -1,0 +1,315 @@
+@import "../../sass/colors";
+
+.light {
+  margin-bottom: 0px !important;
+  input {
+    background: none !important;
+  }
+  textarea {
+    background: none !important;
+    padding: 20px;
+  }
+}
+
+.input_text {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+
+  &.inputError {
+    label {
+      color: $salmon;
+    }
+    input {
+      border-bottom: 1px solid $salmon;
+    }
+    .bar:before,
+    .bar:after {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: $salmon;
+    }
+
+    input:focus ~ label,
+    input:not(:focus):valid ~ label,
+    input:not(:placeholder-shown) ~ label {
+      color: red;
+    }
+  }
+
+  .input__erroText {
+    font-family: FontBook;
+    font-size: 12px;
+    margin-top: 5px;
+    color: $salmon;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $iron;
+    background-color: transparent;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  /* LABEL ======================================= */
+  label {
+    color: $bombay;
+    font-family: FontBook;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  /* active state */
+  input:focus ~ label,
+  input:not(:focus):valid ~ label,
+  input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: $primaryLogin;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $primaryLogin;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+
+  /* active state */
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width: 50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from {
+      background: $primaryLogin;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @-moz-keyframes inputHighlighter {
+    from {
+      background: $primaryLogin;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+  @keyframes inputHighlighter {
+    from {
+      background: $primaryLogin;
+    }
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+}
+
+.input__textarea {
+  label {
+    color: $brownGrey;
+    font-family: FontBook;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  textarea {
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    height: 116px;
+    outline-color: var(--primaryClient);
+    box-sizing: border-box;
+    color: $tundora;
+    background-color: #ffffff;
+
+    outline: 0;
+  }
+}
+
+.input__radio {
+  color: #999;
+  font-family: FontBook;
+  position: relative;
+  cursor: pointer;
+  padding-left: 28px;
+  height: 20px;
+  display: block;
+  line-height: 20px;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 1px $iron;
+    cursor: pointer;
+    box-sizing: border-box;
+    span {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: #f5efef;
+  }
+
+  input:checked ~ .checkmark span {
+    background-color: $primaryLogin;
+  }
+}
+
+.input__select {
+  background-color: transparent;
+}
+
+
+.selectError{
+
+  select{
+    border-bottom: 1px solid $salmon !important;
+  }
+
+  span{
+    color: $salmon !important;
+  }
+
+  .selectErroMessage {
+    font-family: FontBook;
+    font-size: 12px;
+    margin-top: 5px;
+    color: $salmon;
+  }
+}
+
+.input_address{
+  margin-bottom: 40px;
+  border-bottom: 1px solid $iron;
+  padding: 10px 0px 10px 0px;
+  &--title{
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: $primaryLogin;
+    padding-left: 5px;
+    &.empty{
+      color: $brownGrey;
+    }
+  }
+}
+
+.input__ReactSelect{
+  width: 100%;
+  color: #999;
+  font-family: FontBook;
+  margin-bottom: 40px;
+  label{
+    display: block;
+    margin-bottom: 10px;
+  }
+  &.error{
+    label,
+    .input__ReactSelect__placeholder,
+    .input__ReactSelect__dropdown-indicator svg {
+      color: $salmon;
+    }
+    .input__ReactSelect__control{
+      border-color: $salmon;
+    }
+    .input__ReactSelect__indicator-separator{
+      background-color: $salmon;
+    }
+
+    .input__erroText{
+      font-family: FontBook;
+      font-size: 12px;
+      margin-top: 5px;
+      color: $salmon;
+    }
+
+  }
+}
+
+.inputLoader {
+  border: 5px solid #fafafa;
+  border-radius: 50%;
+  border-top: 5px solid #d9d9d9;
+  width: 10px;
+  height: 10px;
+  animation: spin 1.2s linear infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

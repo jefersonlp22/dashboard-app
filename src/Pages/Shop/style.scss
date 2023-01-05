@@ -1,0 +1,200 @@
+@import "../../sass/colors";
+
+.collections {
+  &__voidTemplate {
+    &--message {
+      height: 60px;
+      font-family: FontMedium;
+      font-size: 21px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $tundora;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__form {
+    width: 100%;
+
+    &--title {
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+
+    &--right {
+      position: relative;
+      width: 30%;
+      .collectionSave {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    form {
+      width: 65%;
+      margin-right: 50px;
+    }
+  }
+
+  &__radioGroup {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    &--title {
+      color: #999;
+      font-family: FontBook;
+      font-size: 15px;
+    }
+    &--label {
+      font-size: 15px;
+      margin-left: 30px;
+    }
+  }
+
+  &__setVisibility {
+    width: fit-content;
+    margin: 0 auto 50px auto;
+  }
+
+  &__tagCloud {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .popoverList {
+      width: 240px;
+    }
+  }
+  &__imgCollection {
+    margin-bottom: 30px;
+    .uploadImage {
+      margin: 0 auto;
+    }
+  }
+
+  &__itensFoundCounter {
+    font-family: FontMedium;
+    font-size: 21px;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+  }
+
+  &__seeItensFound {
+    font-family: FontMedium;
+    font-size: 13px;
+    margin-bottom: 50px;
+    color: #0489cc;
+    cursor: pointer;
+  }
+
+  &__cancelActionCollection {
+    font-family: FontMedium;
+    font-size: 14px;
+    color: #b2b2b3;
+    cursor: pointer;
+  }
+  &--returnWrapper {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  &--iconBack {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: -1px 4px 8px 1px #aaaaaa75;
+    cursor: pointer;
+  }
+
+  &__tagsSearch {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 0 10px;
+    &--resultText {
+      font-size: 13px;
+      padding: 10px 5px;
+      font-family: FontMedium;
+      font-weight: normal;
+      color: #9b9b9b;
+    }
+  }
+  &__tag {
+    &--areaLabel {
+      color: #0489cc;
+      opacity: 0.5;
+    }
+    &--closeIcon {
+      padding: 0 5px;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  &__footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px;
+
+    button {
+      background-color: var(--primaryClient);
+      margin-bottom: 0;
+    }
+  }
+  &__setParentCollection {
+    .title {
+      color: #999;
+      margin-bottom: 10px;
+      display: block;
+      font-family: FontBook;
+    }
+  }
+}
+
+.tableCollection__seeItens {
+  table {
+    thead {
+      tr {
+        td {
+          cursor: normal;
+          color: #8a8a8a;
+          font-size: 18px;
+        }
+        &:hover {
+          background-color: #fafafa;
+        }
+      }
+    }
+    .table__row {
+      border: 1px solid #d9d9d9;
+      cursor: default;
+    }
+    .action__column {
+      width: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.subtitle {
+  color: $bombay;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: FontBook, sans-serif;
+}
+
+.linkManageAttributes{
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  color: $cerulean;
+  &:hover{
+    color: $ceruleanHover !important;
+  }
+}

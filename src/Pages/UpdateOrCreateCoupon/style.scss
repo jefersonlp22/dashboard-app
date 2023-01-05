@@ -1,0 +1,200 @@
+@import "../../sass/colors";
+
+.createNewCoupon {
+  &__modalTitle {
+    font-size: 14px;
+    line-height: 1.64;
+    color: $tundora;
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+  .cardStep {
+    padding: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $alabaster !important;
+
+    &__header {
+      margin-bottom: 11px;
+      &--icon {
+        margin-right: 15px;
+      }
+      &--title {
+        font-size: 14px;
+        line-height: 1.64;
+        color: $tundora;
+        margin-left: 0;
+      }
+    }
+
+    &__content {
+      font-size: 12px;
+      line-height: 1.5;
+      color: $bombay;
+    }
+    &__status{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__newList{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      width: 25%;
+      color: $primaryClient;
+      border-radius: 15px;
+      border: $primaryClient solid 1px;
+    }
+    &__list{
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__modalList{
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      cursor: pointer;
+    }
+    &__date {
+      min-width: 450px;
+    }
+    &__inputs {
+      min-width: 550px;
+    }
+    &__channel {
+      min-width: 300px;
+    }
+    &__object {
+      min-width: 300px;
+    }
+    &__input {
+      margin-top: 10px;
+    }
+    &__boxInput {
+      width: 48%;
+    }
+    &__boxInputLeft {
+      width: 50%;
+    }
+    &__boxFile{
+      display: flex;
+      width: 250px;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      background: #F5F5F5;
+      border: 1px solid #D9D9D9;
+      border-radius: 10px;
+    }
+    &__boxFile-content{
+      display: flex;
+      flex-direction: column;
+      width: 230px;
+      height: 900px;
+      justify-content: center;
+      align-items: center;
+    }
+    &__tags {
+      min-width: 410px;
+      max-width: 410px;
+      min-height: 58px;
+      max-height: 90px;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $iron;
+        border: 0px none #ffffff;
+        border-radius: 94px;
+      }
+
+      &::-webkit-scrollbar-thumb:active {
+        background: #0f5f88;
+      }
+      &::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 50px;
+      }
+      &::-webkit-scrollbar-track:hover {
+        background: #ffffff;
+      }
+      &::-webkit-scrollbar-track:active {
+        background: #ffffff;
+      }
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    }
+    &__value {
+      margin-top: 30px;
+      margin-bottom: 10px !important;
+    }
+    &__inputDate {
+      border: solid 1px $iron;
+      font-size: small;
+      padding: 10px;
+      width: 80%;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+  }
+
+  .contentMaxWidth {
+    max-width: 770px;
+  }
+
+  .contentMinWidthUsage {
+    //min-width: 970px;
+    display: grid;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 250px;
+    width: 100%;
+    grid-gap: 30px;
+
+    @media(min-width: 920px){
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .containerColumn{
+
+      .asyncSelectContainer{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .cancelCoupon {
+    font-size: 14px;
+    color: $bombay;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+.couponFormButtons {
+  justify-content: flex-end;
+  margin-top: 50px;
+
+  button + button{
+    margin-left: 20px;
+  }
+}

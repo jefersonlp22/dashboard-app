@@ -1,0 +1,74 @@
+@import "../../sass/colors";
+
+.orders__wrapper {
+  &--indicators {
+    justify-content: space-between;
+    .card {
+      border-radius: 5px;
+      background-color: #ffffff;
+      width: 23%;
+      height: 180px;
+      align-items: center;
+      justify-content: center;
+
+      &__total {
+        font-size: 24px;
+        margin-bottom: 13px;
+        color: #4d4d4d;
+      }
+
+      &__title {
+        font-size: 16px;
+        color: #b2b2b3;
+        margin-bottom: 20px;
+      }
+
+      &__status {
+        font-size: 16px;
+        color: #b2b2b3;
+        align-items: center;
+
+        &.positive {
+          color: #6dc783;
+        }
+        &.positive::before {
+          width: 0;
+          height: 0;
+          content: "";
+          margin-right: 9px;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-bottom: 11px solid #6dc783;
+        }
+
+        &.negative {
+          color: #ff6f6f;
+        }
+        &.negative::before {
+          width: 0;
+          height: 0;
+          content: "";
+          margin-right: 9px;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 11px solid #ff6f6f;
+        }
+      }
+    }
+  }
+
+  .orders__table--header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+.notifyPendingOrders{
+  border-radius: 5px;
+  padding: 16px 25px;
+  color: #ffffff;
+  background-color: $salmon;
+  font-size: 14px;
+  font-family: FontBook;
+} 

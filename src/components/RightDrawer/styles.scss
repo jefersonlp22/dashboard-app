@@ -1,0 +1,15 @@
+.rightDrawer{
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.05);
+  z-index: 999;
+
+  &.drawerOpen{
+    width: fit-content;
+  }
+}

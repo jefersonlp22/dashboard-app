@@ -1,0 +1,28 @@
+export default {
+
+  colors: {
+    alabaster: "#FAFAFA",
+    alto: "#D9D9D9",
+    bitterSweet: "#FF6F6F",
+    black10: "rgba(0, 0, 0, 0.1)",
+    black30: "rgba(0, 0, 0, 0.3)",
+    bombay: "#B2B2B3",
+    deYork: "#6DC783",
+    dustyGray: "#9B9B9B",
+    gallery: "#EDEDED",
+    iron: "#E5E5E6",
+    malibu: "#81A5FF",
+    onawa: "#FF1E3C",
+    primary: "#048DCC",
+    primaryClient: "#048DCC",
+    secondary: "#086899",
+    secondaryClient: "#086899",
+    shadow1: "rgba(0, 0, 0, 0.05)",
+    shadow2: "rgba(0, 0, 0, 0.1)",
+    silver: "#CCCCCC",
+    sunshade: "#FFAD33",
+    tundora: "#4D4D4D",
+    white: "#FFFFFF",
+    wildSand: "#F5F5F5",
+  },
+};

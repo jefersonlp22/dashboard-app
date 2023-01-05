@@ -1,0 +1,61 @@
+@import "./colors";
+
+@mixin linkButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.bt__link {
+  &--primary {
+    @include linkButtonWrapper;
+    background-color: var(--primaryClient);
+    &:hover {
+      background-color: var(--primaryClientHover);
+    }
+  }
+  &--secundary {
+    @include linkButtonWrapper;
+    background-color: var(--secondaryClient);
+    &:hover {
+      background-color: var(--secondaryClientHover);
+      color: white;
+    }
+  }
+}
+
+.buttonFB {
+  @include linkButtonWrapper;
+  background-color: $facebookColor;
+  &:hover {
+    background-color: $facebookColorHover;
+    color: white;
+  }
+}
+
+.btFullWidth {
+  width: 100%;
+}
+
+.buttonDisaprove {
+  background-color: $salmon;
+  margin-left: 20px;
+  &:hover {
+    background-color: $salmon;
+  }
+}
+.buttonApprove {
+  background-color: $soft-green;
+  &:hover {
+    background-color: $soft-green;
+  }
+}
+.buttonDisable {
+  background-color: $disabled;
+  &:hover {
+    background-color: $disabled;
+  }
+  margin-left: 20px;
+  cursor: no-drop;
+}

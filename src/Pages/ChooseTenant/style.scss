@@ -1,0 +1,114 @@
+@import "../../sass/colors";
+
+.choose__tenant {
+  grid-template-areas: "center";
+
+  &--content {
+    width: 80vw;
+  }
+  &--form {
+    width: 100%;
+  }
+  &--contentCard {
+    max-height: 80vh;
+    overflow: auto;
+  }
+  &--contentCardLogo {
+    overflow: visible !important;
+  }
+}
+
+.client__logo {
+  margin: 0 auto 68px auto;
+  display: block;
+}
+
+.wrapper__tenants {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .tenant_card {
+    width: 190px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 30px;
+      color: $tundora;
+      font-size: 14px;
+    }
+
+    &--logo {
+      width: 90%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    &.addMark {
+      background-color: $primaryClient;
+      color: $white;
+      font-size: 40px;
+    }
+  }
+}
+
+.modalAuthInvalid {
+  text-align: center;
+  .title {
+    width: 250px;
+    margin: 50px auto 30px auto;
+    font-family: FontMedium;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--tundora);
+  }
+
+  .mood {
+    margin-bottom: 20px;
+  }
+
+  .text {
+    width: 250px;
+    margin: 0 auto 20px auto;
+    font-family: FontMedium;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b2b2b3;
+  }
+
+  .storesLogos {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    img:first-child {
+      margin-right: 20px;
+    }
+  }
+}

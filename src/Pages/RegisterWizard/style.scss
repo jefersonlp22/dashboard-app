@@ -1,0 +1,40 @@
+@import "../../sass/colors";
+
+.register__wizard--progress {
+  margin: 30px auto auto;
+  width: 105px;
+}
+
+.register__wizard--buttonConfirm {
+  width: 100%;
+}
+.description-password {
+  font-family: FontBook;
+  font-size: 14px;
+  margin-top: -40px;
+  margin-bottom: 35px;
+  color: #b2b2b3;
+  text-align: center;
+  letter-spacing: normal;
+}
+.registerName__feedbackFacebook {
+  right: 20% !important;
+  bottom: 0px !important;
+  overflow: hidden !important;
+  &--popup {
+    width: 290px !important;
+    border-radius: 25px !important;
+    background-color: $facebookColor !important;
+    margin-bottom: 40px !important;
+  }
+
+  &--title {
+    color: $white !important;
+    font-family: FontMedium;
+    font-weight: 100;
+  }
+
+  &--close {
+    color: $white !important;
+  }
+}

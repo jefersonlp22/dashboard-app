@@ -1,0 +1,201 @@
+@import "../../sass/colors";
+
+@mixin grayTitle{
+  font-size: 14;
+  text-align: center;
+  color: #999999;
+}
+
+.welcome {
+
+  &--brandbar{
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    img{
+      height: 60px;
+    }
+  }
+  &--wantJoin{
+    margin-bottom: 60px;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: FontMedium;
+  }
+
+  &--copyright{
+    margin: 50px 0px;
+    text-align: center;
+    color: #B2B2B2;
+    font-size: 1.1rem;
+    font-family: FontMedium;
+  }
+
+  &--layout {
+    display: flex;
+    background: rgb(47, 204, 182);
+    background: linear-gradient(
+      180deg,
+      $primaryLogin 0%,
+      $primaryLogin 40%,
+      #EDEDED 40%
+    );
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-width: 768px) {
+      background-size: contain;
+    }
+  }
+
+  &--content {
+    padding-top: 60px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 450px;
+    }
+  }
+
+  &--header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+  }
+
+  &--header__title {
+    font-family: FontBold;
+    font-size: 24px;
+    margin: 0;
+    color: $white;
+  }
+
+  &--header__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--form {
+    @media (min-width: 768px) {
+      width: 450px;
+    }
+  }
+
+  &--card {
+    border-radius: 5px;
+    background-color: $wildSand;
+    border: 1px solid $iron;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 45px 60px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
+    max-width: 300px;
+    @media (min-width: 640px) {
+      padding: 55px 65px 70px;
+      max-width: 100%;
+    }
+  }
+
+  &--card__title {
+    color: #4d4d4d;
+    font-family: FontMedium;
+    font-size: 18px;
+    margin: 30px auto 55px auto;
+  }
+
+  &--actions {
+    margin-top: -70px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    .button {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__form{
+    &--title{
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #4D4D4D;
+      line-height: 23px;
+      margin-bottom: 40px;
+      font-family: FontMedium;
+
+      &.error{
+        color: #ff6f6f;
+        width: 300px;
+      }
+    }
+
+    &--code{
+      .gray-title{
+        @include grayTitle;
+        margin-bottom: 20px;
+      }
+      .code{
+        height: 65px;
+        border: 1px solid #E4E4E4;
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+        align-items: center;
+        margin: 0 auto;
+        color: #048DCC;
+        font-family: FontMedium;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+    }
+    &--footer-message{
+      @include grayTitle;
+    }
+    &--download-apps{
+      text-align: center;
+    }
+    &--apps-links{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      a:first-child{
+        margin-right: 15px;
+      }
+    }
+
+    &--yourinvite{
+      margin-bottom: 30px;
+
+      .gray-title{
+        @include grayTitle;
+        margin-bottom: 20px;
+      }
+
+      table, tr, td{
+        border: 1px solid #E4E4E4;
+        margin: 0 auto;
+      }
+      td{
+        padding: 15px;
+        font-size: 14px;
+        color: #4D4D4D;
+        font-family: FontBook;
+        &.tbtitle{
+          font-family: FontBold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../sass/colors";
+
+
+@mixin dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.ProgressDots{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.ProgressDots__dotActive{
+    @include dot;
+    background-color: $primaryClient;
+}
+ 
+.ProgressDots__dotInactive{
+    @include dot;
+    background-color: $bombay;
+}

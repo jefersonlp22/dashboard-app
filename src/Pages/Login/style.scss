@@ -1,0 +1,12 @@
+@import "../../sass/colors";
+
+.forgotPassword {
+  margin-top: 20px;
+  font-family: FontBold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primaryLogin;
+  text-decoration: none;
+  display: block;
+}

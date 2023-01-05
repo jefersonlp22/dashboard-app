@@ -1,0 +1,17 @@
+.extraClass {
+  
+  font-size: 20px !important;
+  pointer-events: auto !important;  
+  height: 40px !important;
+  background: #0097d6 !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;  
+  cursor: pointer;
+  &::after {
+    border-top-color: #0097d6 !important;
+  }
+  &:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}

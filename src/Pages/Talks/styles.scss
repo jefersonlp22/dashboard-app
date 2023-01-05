@@ -1,0 +1,76 @@
+@import "../../sass/colors";
+
+.talks__wrapper {
+  &--board {
+    padding: 100px 80px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    position: relative;
+    border: solid 1px #e6e6e6;
+    max-width: 770px;
+  }
+
+  &--content {
+    max-width: 450px;
+  }
+  &--title {
+    color: $tundora;
+    margin-bottom: 50px;
+  }
+
+  &--label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $bombay;
+    margin-bottom: 14px;
+    display: block;
+
+    &.link {
+      cursor: pointer;
+    }
+  }
+
+  &--returnWrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &--iconBack {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: -1px 4px 8px 1px #aaaaaa75;
+    cursor: pointer;
+  }
+
+  &--indicators {
+    justify-content: space-between;
+    .card {
+      border-radius: 5px;
+      background-color: #ffffff;
+      width: 23%;
+      height: 180px;
+      align-items: center;
+      justify-content: center;
+
+      &__total {
+        font-size: 24px;
+        margin-bottom: 13px;
+        color: #4d4d4d;
+      }
+
+      &__title {
+        font-size: 16px;
+        color: #b2b2b3;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

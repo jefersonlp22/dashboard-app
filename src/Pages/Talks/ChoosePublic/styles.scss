@@ -1,0 +1,127 @@
+@import "../../../sass/colors";
+
+.choosePublic {
+  .contentMaxWidth {
+    max-width: 770px;
+  }
+
+  &__actionButtons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    button + button {
+      margin-left: 20px;
+    }
+  }
+  .boxLevel {
+    display: flex;
+  }
+  .header-card {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .options {
+    display: flex;
+    align-items: center;
+  }
+  .radioButton {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-family: FontBook;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--bombay);
+  }
+  .level-selected {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: solid 1px var(--primaryClient);
+    background-color: var(--primaryClient);
+    float: left;
+    color: white;
+    margin: 5px 5px 5px 0;
+    font-size: 14px;
+    min-width: 60px;
+    span {
+      margin-right: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .icon {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    &:focus {
+      box-shadow: 1px 1px 1px brown;
+    }
+
+    button {
+      border: none;
+      // padding: 5px 5px 5px 10px;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      max-height: 24px;
+    }
+  }
+  .level {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: solid 1px var(--primaryClient);
+    background-color: white;
+    float: left;
+    color: var(--primaryClient);
+    margin: 5px 5px 5px 0;
+    font-size: 14px;
+    min-width: 60px;
+    span {
+      margin-right: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .icon {
+      margin-left: 10px;
+    }
+
+    button {
+      border: none;
+      // padding: 5px 5px 5px 10px;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      max-height: 24px;
+    }
+  }
+  .listPeoples {
+    font-family: FontBook;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0489cc;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+  }
+}

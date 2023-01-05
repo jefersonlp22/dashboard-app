@@ -1,0 +1,71 @@
+@import "../../../../sass/colors";
+@import "../../../../sass/fonts.scss";
+
+.expertRegister{
+
+  .previus{
+      font-size: 12px;
+      color: $silver;
+      margin-bottom: 32px;
+  }
+
+  .subtitle{
+      font-size: 14px;
+      line-height: 1.5;
+      color: $bombay;
+  }
+
+  &--breadcrumbs {
+      margin-bottom: 30px;
+  }
+  &--title {
+    color: #4d4d4d;
+  }
+  &--subtitle{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  &--board {
+    width: 450px;
+    padding: 25px 80px 100px 80px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    position: relative;
+    border: solid 1px #e5e5e6;
+  }
+  
+  &--returnWrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &--iconBack {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: -1px 4px 8px 1px #aaaaaa75;
+    cursor: pointer;
+  }
+  &--orderProgress {
+    height: 160px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+    
+
+  &--account{
+    margin-bottom: 45px;
+    border-bottom: 1px solid #e5e5e6;
+    padding: 10px 0px 10px 0px;
+    &--title{
+      color: $cerulean;
+      padding-left: 5px;
+      font-size: 14px;
+    }
+  }
+}
+

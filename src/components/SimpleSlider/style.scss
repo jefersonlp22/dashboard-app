@@ -1,0 +1,31 @@
+@import "../../sass/colors";
+
+@mixin arrowStyle {
+  color: $bombay;
+  font-family: FontMedium;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.simpleSliderArrows {
+  @include arrowStyle;
+}
+
+.simpleSliderDotsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.simpleSliderDots {
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  border-radius: 20px;
+  background-color: $disabled;
+  transition: linear 0.5s;
+  &.activeDot {
+    transform: scale(1.2, 1.2);
+    background-color: $primaryClient;
+  }
+}

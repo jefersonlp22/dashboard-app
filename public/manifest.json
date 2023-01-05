@@ -1,0 +1,27 @@
+{
+  "short_name": "People Commerce",
+  "name": "People Commerce - Resultado por Relacionamento",
+  "description": "O People Commerce é um modelo centrado em pessoas e tecnologia para geração de resultados incríveis através dos relacionamentos.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "gcm_sender_id": "945887285037"
+}

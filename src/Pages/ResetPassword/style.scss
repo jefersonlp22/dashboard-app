@@ -1,0 +1,28 @@
+@import "../../sass/colors";
+@import "../../sass/buttons";
+
+@mixin text {
+  font-size: 16px;
+  text-align: center;
+  color: $bombay;
+}
+.reset__password {
+  &--title {
+    font-size: 21px;
+    font-family: FontBook;
+    font-weight: bold;
+    text-align: center;
+    color: $tundora;
+  }
+
+  &--emailSended {
+    @include text;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  &--message {
+    @include text;
+
+    margin-bottom: 42px;
+  }
+}

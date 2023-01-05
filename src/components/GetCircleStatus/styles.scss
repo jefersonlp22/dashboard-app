@@ -1,0 +1,43 @@
+.circleStatus {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  margin-right: 10px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__wrapperLeft {
+    display: flex;
+    align-items: center;
+    width: fit-content;  
+  }
+  &.default {
+    background-color: #d9d9d9;
+  }
+  &.approved {
+    background-color: #6dc783;
+  }
+  &.canceled {
+    background-color: #ff6f6f;
+  }
+}
+
+.labelStatus {
+  font-family: FontBook;
+  text-transform: capitalize;
+  font-size: 14;
+  
+  &.default {
+    color: #d9d9d9;
+  }
+  &.approved {
+    color: #6dc783;
+  }
+  &.canceled {
+    color: #ff6f6f;
+  }
+}

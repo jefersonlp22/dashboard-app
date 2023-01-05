@@ -1,0 +1,49 @@
+@import "../../sass/colors";
+
+.table {
+  background-color: #fafafa;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+  border: solid 1px $iron;
+  overflow: hidden;
+
+  thead {
+    td {
+      color: $tundora;
+    }
+  }
+}
+
+.table__row {
+  border: 1px solid $iron;
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+
+  &:not(:last-child),
+  &:first-child {
+    .table__column {
+      border-bottom: solid 1px $iron;
+    }
+  }
+}
+
+.table__column {
+  padding: 11px 20px;
+  color: #b2b2b3;
+  font-family: FontBook;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+}
+
+.table__arrow{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

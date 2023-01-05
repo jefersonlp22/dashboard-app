@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="412px" viewBox="0 0 210 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g id="c_preview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M191,0 C201.49341,-1.92760819e-15 210,8.50658975 210,19 L210,393 C210,403.49341 201.49341,412 191,412 L19,412 C8.50658975,412 1.28507213e-15,403.49341 0,393 L0,19 C-1.28507213e-15,8.50658975 8.50658975,1.92760819e-15 19,0 L191,0 Z M200,30 L10,30 L10,370 L200,370 L200,30 Z" id="Combined-Shape" fill="#FFFFFF">
+          xapuleta
+        </path>
+        <circle id="Oval" fill="#F5F5F5" cx="105" cy="391" r="12"></circle>
+        <rect id="Rectangle" fill="#F5F5F5" x="90" y="22" width="30" height="4" rx="2"></rect>
+    </g>
+</svg>

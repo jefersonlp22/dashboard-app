@@ -1,0 +1,99 @@
+@import "../../../../../sass/colors";
+
+.cepRange {
+  label {
+    display: block;
+    color: $brownGrey;
+    font-family: FontBook;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  input {
+    display: block;
+
+    padding: 19px 23px;
+
+    box-sizing: border-box;
+    min-height: 52px;
+    width: 100%;
+
+    border: 1px solid $disabled;
+    border-radius: 5px;
+
+    outline: 0;
+
+    font-family: FontBook;
+    font-size: 12px;
+    color: $tundora;
+    height: 52px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input {
+    margin-right: 30px;
+  }
+
+  textarea {
+    resize: none;
+    line-height: 12px;
+    overflow: hidden;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  &__add {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 200px;
+    font-family: FontBook;
+    font-size: 14px;
+    color: $dustGray;
+    cursor: pointer;
+    transition: 0.2s color;
+    svg {
+      margin-right: 10px;
+      transition: 0.2s color;
+    }
+    &:hover {
+      color: #6d6969;
+      svg {
+        color: #6d6969;
+      }
+    }
+  }
+
+  &__remove {
+    margin-left: 21px;
+    display: flex;
+    align-self: center;
+    svg {
+      color: $dustGray;
+      cursor: pointer;
+      &:hover {
+        color: #6d6969;
+      }
+    }
+  }
+}

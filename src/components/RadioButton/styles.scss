@@ -1,0 +1,50 @@
+@import "../../sass/colors";
+
+.RadioButton{      
+    padding: 15px;  
+    font-size: 14px;        
+    line-height: 1.57;
+    color: $dustGray;  
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    
+    .check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background-color: #FFF;
+        border: 1px solid #e5e5e6;
+        margin-right: 10px;
+    }
+    
+    .check:after {
+        content: " ";
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+
+    input[type="radio"] ~ .check,
+    input[type="radio"] ~ .check:after{        
+        border-radius: 100%;
+    }
+
+    input:checked ~ .check:after{
+        background-color: $cerulean;
+    }
+
+
+}

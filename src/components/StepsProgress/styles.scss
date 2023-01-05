@@ -1,0 +1,96 @@
+.steps__progress {
+  position: relative;
+
+  &--container {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  &--title {
+    color: #4d4d4d;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &--date {
+    color: #b2b2b3;
+    font-size: 14px;
+  }
+  .steps__progress--progressbar li {
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    list-style: none;
+  }
+
+  .steps__progress--progressbar li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 3px solid #d9d9d9;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    line-height: 27px;
+    background: white;
+    color: #b2b2b3;
+    text-align: center;
+    font-weight: bold;
+  }
+  .steps__progress--progressbar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #d9d9d9;
+    top: 10px;
+    left: -50%;
+    z-index: -1;
+  }
+
+  .steps__progress--progressbar li.steps__progress--first:before {
+    border-color: #6dc783;
+    background: #6dc783;
+  }
+  .steps__progress--progressbar li.steps__progress--first:after {
+    border-color: #6dc783;
+    background: #6dc783;
+  }
+  .steps__progress--progressbar li.steps__progress--first:before {
+    border-color: #6dc783;
+    background: #6dc783;
+  }
+
+  &.active {
+    .steps__progress--progressbar li.steps__progress--current:before {
+      border-color: #6dc783;
+      background: #6dc783;
+    }
+    .steps__progress--progressbar li.steps__progress--current:after {
+      border-color: #6dc783;
+      background: #6dc783;
+    }
+    .steps__progress--progressbar li.steps__progress--current:before {
+      border-color: #6dc783;
+      background: #6dc783;
+    }
+
+    .steps__progress--progressbar li:first-child:after {
+      content: none;
+    }
+  }
+
+  &.canceled {
+    .steps__progress--progressbar li.steps__progress--current:before {
+      border-color: #ff6f6f;
+      background: #ff6f6f;
+    }
+
+    .steps__progress--progressbar li:first-child:after {
+      content: none;
+    }
+  }
+}

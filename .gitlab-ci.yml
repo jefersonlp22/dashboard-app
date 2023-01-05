@@ -1,0 +1,37 @@
+image: node:10
+stages:
+  - deploy
+
+sandbox:
+  stage: deploy
+  environment: onawa
+  script:
+    - apt-get update && apt-get -y install gettext
+    - rm -rf build
+    - npm install
+    - npm install aeonian
+    - mv sandbox.example.env .env
+    - npm run build
+    - node deploy.js sandbox
+  when: manual
+  artifacts:
+    paths:
+      - build
+
+live:
+  stage: deploy
+  environment: onawa
+  script:
+    - apt-get update && apt-get -y install gettext
+    - rm -rf build
+    - npm install
+    - npm install aeonian
+    - mv example.env .env
+    - npm run build
+    - node deploy.js live
+  only:
+    - master
+  when: manual
+  artifacts:
+    paths:
+      - build

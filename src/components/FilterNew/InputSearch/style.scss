@@ -1,0 +1,80 @@
+@import "../../../sass/colors";
+.search__input {
+    position: relative;
+    height: 40px;
+    input {
+      background-color: $iron;
+      border-radius: 5px;
+        height: 40px;
+        padding: 0;
+        box-sizing: border-box;       
+        border: none;
+        width: 0;
+        opacity: 0;
+        margin-right: 40px;
+        justify-content: center;
+        transition: all 0.4s linear;
+        outline: none;
+    }
+    
+    .iconClear{
+      z-index: 1;
+      margin-right: 40px;
+    }
+
+    .iconSearch,
+    input {
+        position: absolute;
+        right: 0;
+    }
+    svg {
+      cursor: pointer;
+      :hover{
+        opacity: 0.8;
+      }
+    }
+
+    &.searchInputOpen{
+        input {       
+            padding: 10px 75px 10px 13px;              
+            background-color: $iron;
+            width: fit-content;
+            margin-right: 0px;
+            opacity: 1;
+        }
+    }
+
+  }
+
+
+
+.inputLoader {
+    border: 5px solid $iron;
+    border-radius: 50%;
+    border-top: 5px solid #d9d9d9;
+    width: 12px;
+    height: 12px;
+    animation: spin 1.2s linear infinite;
+    margin: 0 9px;
+    border-right: 5px solid #d9d9d9;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

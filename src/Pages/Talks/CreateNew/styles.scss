@@ -1,0 +1,55 @@
+@import "../../../sass/colors";
+
+.createNewCommunication{
+    
+    .cardStep{
+        padding: 16px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &__header{
+            margin-bottom: 11px;
+            &--icon{
+                margin-right: 15px;
+            }
+            &--title{
+                font-size: 14px;                
+                line-height: 1.64;
+                color: $tundora;
+                margin-left: 0;
+            }
+        }
+
+        &__content{
+            font-size: 12px;        
+            line-height: 1.5;
+            color: $bombay;
+        }
+    }
+
+    .contentMaxWidth{
+        max-width: 770px;
+    }
+
+    .cancelComunication{
+    font-size: 14px;
+    color: $bombay;
+    margin-top: 30px;
+    cursor: pointer;
+    }
+
+    &__actionButtons{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        
+        button + button{
+            margin-left: 20px;
+        }
+    }
+
+}

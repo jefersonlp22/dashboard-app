@@ -1,0 +1,34 @@
+@import "../../../sass/colors";
+.facetsSaveButton {
+    height: 50px;
+    border-radius: 30px;
+    padding: 5px 10px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    &.activeSaveButton{
+        background-color: $soft-green;
+        button{
+            background-color: $soft-green;
+        }
+    }
+
+    &.disableSaveButton{
+        background-color: $bombay;
+        button{
+            background-color: $bombay;
+        }
+    }
+    
+    &-text{
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #FFF;
+    }
+    
+    button{
+        border: 1px solid #fff;
+    }
+  }

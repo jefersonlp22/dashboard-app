@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="568px" viewBox="0 0 320 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>00_03</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="250" height="50" rx="25"></rect>
+        <filter x="-6.4%" y="-24.0%" width="114.4%" height="172.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="2" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="250" height="50" rx="25"></rect>
+        <filter x="-6.4%" y="-24.0%" width="114.4%" height="172.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="2" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="00_03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F5F5F5" x="0" y="0" width="320" height="568"></rect>
+        <g id="buttons/01" transform="translate(35.000000, 224.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#048DCC" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <text id="CONFIRMAR" mask="url(#mask-2)" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                <tspan x="64.172" y="22">BOTÃO PRINCIPAL</tspan>
+            </text>
+        </g>
+        <g id="buttons/01" transform="translate(35.000000, 294.000000)">
+            <mask id="mask-5" fill="white">
+                <use xlink:href="#path-4"></use>
+            </mask>
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
+                <use fill="#086899" fill-rule="evenodd" xlink:href="#path-4"></use>
+            </g>
+            <text id="CONFIRMAR" mask="url(#mask-5)" font-family="CircularStd-Bold, Circular Std" font-size="12" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                <tspan x="53.224" y="22">BOTÃO ALTERNATIVO</tspan>
+            </text>
+        </g>
+        <g id="c_header5">
+            <g id="icons/40px/arrow_back" transform="translate(5.000000, 20.000000)" fill="#4D4D4D" fill-rule="evenodd">
+                <polygon id="Path" points="28 19 15.8 19 21.4 13.4 20 12 12 20 20 28 21.4 26.6 15.8 21 28 21"></polygon>
+            </g>
+            <text id="FINALIZAR" font-family="CircularStd-Medium, Circular Std" font-size="16" font-weight="400" letter-spacing="1"></text>
+        </g>
+    </g>
+</svg>

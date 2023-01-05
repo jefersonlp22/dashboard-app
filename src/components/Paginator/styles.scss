@@ -1,0 +1,45 @@
+@import "../../sass/colors";
+
+@mixin flexHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.paginator{
+    @include flexHorizontal;
+    margin: 20px 0;
+
+    &__nav{
+        @include flexHorizontal;
+    }
+    
+    &__arrow{
+        &--left{
+            transform: rotate(180deg);
+        }
+    }
+
+    &__page{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;        
+        margin: 5px;        
+        border: none;
+        box-sizing: border-box;
+        background-color: transparent;
+        height: 35px;
+        min-width: 25px;
+        font-size: 16px;
+        color: $tundora;
+
+        &.indicator{
+            cursor: default;
+        }
+    }
+    
+    &__amount{
+        min-width: 200px;
+    }
+}

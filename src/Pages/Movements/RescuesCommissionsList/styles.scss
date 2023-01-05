@@ -1,0 +1,169 @@
+@import "../../../sass/colors";
+@import "../../../sass/fonts.scss";
+
+.rescuesCommissionsList{
+
+    .previus{
+        font-size: 12px;
+        color: $silver;
+        margin-bottom: 32px;
+    }
+
+    .subtitle{
+        font-size: 14px;
+        line-height: 1.5;
+        color: $bombay;
+    }
+
+    &--breadcrumbs {
+        margin-bottom: 30px;
+    }
+      &--title {
+        color: #4d4d4d;
+      }
+      &--board {
+        padding: 25px 80px 100px 80px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        position: relative;
+        border: solid 1px #e6e6e6;
+      }
+     
+      &--returnWrapper {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      &--iconBack {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #fff;
+        box-shadow: -1px 4px 8px 1px #aaaaaa75;
+        cursor: pointer;
+      }
+      &--orderProgress {
+        height: 160px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+      }
+    
+      &--approvation {
+        padding: 20px;
+        margin-bottom: 30px;
+    
+        .message {
+          color: #4d4d4d;
+          font-size: 15px;
+        }
+    
+        .reproveButton {
+          background-color: #ff6f6f;
+          color: #fff;
+          margin-right: 20px;
+          margin-bottom: 0;
+        }
+        .approveButton {
+          background-color: #6dc783;
+          color: #fff;
+          margin-bottom: 0;
+        }
+      }
+    
+      &--details {
+        box-sizing: border-box;
+    
+        &.col-left {
+          width: 45%;
+          padding-right: 30px;
+        }
+        &.col-right {
+          width: 55%;
+        }
+    
+        &__title {
+          color: #b2b2b3;
+          font-size: 14px;
+        }
+        &__item {
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 13px;
+          margin-bottom: 10px;
+          &--img {
+            margin-right: 18px;
+            max-height: 90px;
+          }
+          &--title {
+            color: #4d4d4d;
+            font-size: 15px;
+            margin-bottom: 10px;
+            overflow-wrap: break-word;
+          }
+          &--description {
+            color: #b2b2b3;
+            font-size: 0.9rem;
+            display: block;
+            max-width: 270px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &--total {
+            color: #4d4d4d;
+            font-size: 1rem;
+            font-family: FontMedium;
+            margin-top: 10px;
+          }
+          .item__title {
+            color: #4d4d4d;
+            font-size: 14px;
+            margin-left: 12px;
+          }
+        }
+        &__payment {
+          padding: 15px 13px;
+          margin-bottom: 10px;
+          &--title {
+            color: #b2b2b3;
+            font-size: 0.9rem;
+            margin: 0;
+          }
+          .item__title {
+            color: #4d4d4d;
+            font-size: 14px;
+            margin-left: 12px;
+          }
+          &--types {
+            margin-top: 10px;
+          }
+        }
+        &__totalSale {
+          padding: 20px 30px;
+          &--taxes {
+            color: #b2b2b3;
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+          &--discount {
+            color: #ff6f6f;
+            font-size: 1rem;
+            margin-bottom: 8px;
+          }
+          &--total {
+            color: #4d4d4d;
+            font-size: 1rem;
+          }
+        }
+      }
+}
+
+
+.commissionCardInformation{
+    svg{
+        margin-right: 15px;
+    }
+}

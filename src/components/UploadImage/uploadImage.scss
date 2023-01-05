@@ -1,0 +1,15 @@
+.uploadImage {
+  background: #ededed;
+  width: 200px;
+  height: 160px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-bottom: 40px;
+
+  button{
+    min-width: 170px !important;
+  }
+}

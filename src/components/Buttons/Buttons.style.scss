@@ -1,0 +1,135 @@
+@import "../../sass/colors.scss";
+
+@mixin basic {
+  outline: none;
+  border: 0;
+  height: 40px;
+  border-radius: 25px;
+  font-family: FontMedium;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 13px;
+  box-sizing: border-box;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  min-width: 200px;
+}
+
+.button {
+  @include basic;
+  cursor: pointer;
+}
+
+.innerEdge {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  div {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 10px 5px;
+    width: 100%;
+    margin: 0 10px;
+  }
+  &.inactive {
+    height: 50px;
+    background-color: $disabled;
+    &:hover {
+      background-color: $brownGrey;
+    }
+  }
+
+  &.primary {
+    padding: 0;
+  }
+}
+
+.disabled {
+  @include basic;
+  background-color: $disabled;
+}
+
+.wrapper__login {
+  .primary {
+    background-color: var(--primaryClient);
+  }
+
+  .secondary {
+    @include basic;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--secondaryClient);
+    &:hover {
+      background-color: var(--secondaryClientHover);
+    }
+  }
+}
+
+
+.secondary {
+  @include basic;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--secondaryClient);
+  &:hover {
+    background-color: var(--secondaryClientHover);
+  }
+}
+.success {
+  background-color: #6dc783;
+  &:hover {
+    background-color: #5ba76e;
+  }
+}
+.cancel {
+  background-color: #a2a3a7;
+  &:hover {
+    background-color: #8f9096;
+  }
+}
+
+.primary {
+  background-color: var(--primaryClient);
+  padding: 10px 30px;
+  &:hover {
+    background-color: var(--primaryClientHover);
+  }
+}
+
+.buttonLoader {
+  border: 5px solid #fafafa;
+  border-radius: 50%;
+  border-top: 5px solid #d9d9d9;
+  width: 10px;
+  height: 10px;
+  animation: spin 1.2s linear infinite;
+  margin-top: -2px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

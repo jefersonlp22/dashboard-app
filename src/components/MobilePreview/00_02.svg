@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="568px" viewBox="0 0 320 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>00_02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="140" height="270" rx="5"></rect>
+        <rect id="path-3" x="0" y="2.84217094e-14" width="140" height="170"></rect>
+        <rect id="path-5" x="0" y="0" width="140" height="270" rx="5"></rect>
+        <rect id="path-7" x="0" y="2.84217094e-14" width="140" height="170"></rect>
+        <rect id="path-9" x="0" y="0" width="140" height="270" rx="5"></rect>
+        <rect id="path-11" x="0" y="2.84217094e-14" width="140" height="170"></rect>
+        <rect id="path-13" x="0" y="0" width="140" height="270" rx="5"></rect>
+        <rect id="path-15" x="0" y="2.84217094e-14" width="140" height="170"></rect>
+    </defs>
+    <g id="00_02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F5F5F5" x="0" y="0" width="320" height="568"></rect>
+        <rect id="Rectangle" fill="#048DCC" x="0" y="0" width="320" height="120"></rect>
+        <g id="c_box1-1" transform="translate(15.000000, 135.000000)">
+            <g id="Group">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="Bitmap" mask="url(#mask-2)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#EDEDED" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+        <g id="c_box1-1" transform="translate(15.000000, 415.000000)">
+            <g id="Group">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-5"></use>
+                <g id="Bitmap" mask="url(#mask-6)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="Mask" fill="#EDEDED" xlink:href="#path-7"></use>
+                </g>
+            </g>
+        </g>
+        <g id="c_box1-1" transform="translate(165.000000, 135.000000)">
+            <g id="Group">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-9"></use>
+                <g id="Bitmap" mask="url(#mask-10)">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <use id="Mask" fill="#EDEDED" xlink:href="#path-11"></use>
+                </g>
+            </g>
+        </g>
+        <g id="c_box1-1" transform="translate(165.000000, 415.000000)">
+            <g id="Group">
+                <mask id="mask-14" fill="white">
+                    <use xlink:href="#path-13"></use>
+                </mask>
+                <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-13"></use>
+                <g id="Bitmap" mask="url(#mask-14)">
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <use id="Mask" fill="#EDEDED" xlink:href="#path-15"></use>
+                </g>
+            </g>
+        </g>
+        <g id="icons/40px/search" transform="translate(274.000000, 20.000000)" fill="#FFFFFF">
+            <path d="M28.7263218,28.3059895 L24.2890139,23.6028508 C25.4299237,22.220693 26.0550349,20.4816557 26.0550349,18.6712425 C26.0550349,14.4413861 22.6781252,11 18.5275175,11 C14.3769098,11 11,14.4413861 11,18.6712425 C11,22.9010989 14.3769098,26.342485 18.5275175,26.342485 C20.0857136,26.342485 21.5705982,25.8635326 22.8401304,24.9543236 L27.3111485,29.6931503 C27.4980273,29.8909349 27.7493809,30 28.0187352,30 C28.2736889,30 28.5155513,29.9009409 28.6991573,29.7208335 C29.0892791,29.338272 29.1017158,28.7038936 28.7263218,28.3059895 Z M18.5275175,13.0011937 C21.5954718,13.0011937 24.0913347,15.5447109 24.0913347,18.6712425 C24.0913347,21.7977741 21.5954718,24.3412913 18.5275175,24.3412913 C15.4595632,24.3412913 12.9637002,21.7977741 12.9637002,18.6712425 C12.9637002,15.5447109 15.4595632,13.0011937 18.5275175,13.0011937 Z" id="Shape"></path>
+        </g>
+        <g id="icons/40px/arrow_back" transform="translate(5.000000, 20.000000)" fill="#FFFFFF">
+            <polygon id="Path" points="28 19 15.8 19 21.4 13.4 20 12 12 20 20 28 21.4 26.6 15.8 21 28 21"></polygon>
+        </g>
+        <text id="150-resultados" font-family="CircularStd-Book, Circular Std" font-size="14" font-weight="300" line-spacing="22"></text>
+        <rect id="Rectangle" fill="#FFFFFF" opacity="0.3" x="0" y="69" width="320" height="1"></rect>
+    </g>
+</svg>

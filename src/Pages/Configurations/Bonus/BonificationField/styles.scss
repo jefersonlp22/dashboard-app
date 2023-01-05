@@ -1,0 +1,136 @@
+@import "../../../../sass/colors";
+
+.bonificationField{
+
+  label{
+    display: block;
+    color: $brownGrey;
+    font-family: FontBook;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .input_wrapper{
+    width: 200px;
+    margin-right: 30px;
+
+    .typevalue{
+      width: 200px;
+      color: #999;
+      font-family: FontBook;
+      height: 52px;
+      .typevalue__control{
+        height: 52px;
+      }
+      .typevalue__value-container{
+        height: 52px;
+      }
+      label{
+        display: block;
+        margin-bottom: 10px;
+      }
+      &.error{
+        label,
+        .typevalue__placeholder,
+        .typevalue__dropdown-indicator svg {
+          color: $salmon;
+        }
+        .typevalue__control{
+          border-color: $salmon;
+        }
+        .typevalue__indicator-separator{
+          background-color: $salmon;
+        }
+
+        .input__erroText{
+          font-family: FontBook;
+          font-size: 12px;
+          margin-top: 5px;
+          color: $salmon;
+        }
+
+      }
+    }
+
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+
+  input, textarea{
+    display: block;
+
+    padding: 19px 23px;
+
+    box-sizing: border-box;
+    min-height: 52px;
+    width: 100%;
+
+    border: 1px solid $disabled;
+    border-radius: 5px;
+
+    outline: 0;
+
+    font-family: FontBook;
+    font-size: 12px;
+    color: $tundora;
+    height: 52px;
+  }
+
+  input{
+    margin-right: 30px;
+  }
+
+  textarea{
+    resize: none;
+    line-height: 12px;
+    overflow: hidden;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  &__add{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 155px;
+    font-family: FontBook;
+    font-size: 14px;
+    color: $dustGray;
+    cursor: pointer;
+    transition: 0.2s color;
+    svg{
+      margin-right: 10px;
+      transition: 0.2s color;
+    }
+    &:hover{
+      color: #6d6969;
+      svg{
+        color: #6d6969;
+      }
+    }
+  }
+
+  &__remove{
+    margin-left: 21px;
+    display: flex;
+    align-self: center;
+    svg{
+      color: $dustGray;
+      cursor: pointer;
+      &:hover{
+        color: #6d6969;
+      }
+    }
+  }
+}
+
+
+

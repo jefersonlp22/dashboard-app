@@ -1,0 +1,55 @@
+.tag {
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: solid 1px var(--primaryClient);
+  background-color: white;
+  float: left;
+  margin: 5px 5px 5px 0;
+  font-size: 14px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+  min-width: 60px;
+  span {
+    margin-right: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:focus {
+    box-shadow: 1px 1px 1px brown;
+  }
+
+  button {
+    border: none;
+    // padding: 5px 5px 5px 10px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    max-height: 24px;
+  }
+
+  .small{    
+    color: #fff;
+    opacity: 0.5;    
+    font-size: 12px;    
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+}
+
+.tagIconButton {
+  padding: 0;
+  max-height: 20px;
+  min-width: 20px;
+  border: 1px solid black;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}

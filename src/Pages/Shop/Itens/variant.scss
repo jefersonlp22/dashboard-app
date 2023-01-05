@@ -1,0 +1,83 @@
+@import "../../../sass/colors";
+
+.subtitle {
+  color: $bombay;
+  font-size: 16px;
+}
+
+.innerTable {
+  margin-top: 20px;
+  box-shadow: none;
+  .thead {
+    .td:first-child {
+      width: 40%;
+    }
+    .td:last-child {
+      width: 10%;
+    }
+  }
+}
+
+.emptyListDescription {
+  color: $silver;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+
+.legendHowUse {
+  color: $silver;
+  font-size: 14px;
+}
+
+.removeVariant {
+  fill: #c8c7cc;
+  width: 30px;
+  height: 30px;
+}
+
+button.primary {
+  box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tagSmallText {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.label__typeVariations {
+  height: 26px;
+  align-items: center;
+
+  .label {
+    margin-bottom: 0;
+  }
+  &.unique {
+    margin-bottom: 30px;
+  }
+  &.withVariatons {
+    margin-bottom: 7px;
+  }
+}
+
+.newItem__radioGroup {
+  max-width: 200px;
+  width: 200px;
+}
+
+.floatingButtons {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 290px;
+}
+
+.cardManageVariation {
+  border: solid 1px $bombay;
+  padding: 30px;
+}
+
+.titleLink {
+  text-decoration: none;
+  color: $cerulean;
+  font-weight: bold;
+}
